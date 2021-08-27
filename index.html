@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xamia</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="big-wrapper light">
+      <img src="assets/img/shape.png" alt="" class="shape" />
+
+      <header>
+        <div class="container">
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+            <h3><a href="#" style="all:unset"></a>Xamia</a></h3>
+          </div>
+
+          <div class="links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="login.html" class="btn">Sign In</a></li>
+            </ul>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="showcase-area">
+        <div class="container">
+          <div class="left">
+            <div class="big-title">
+              <h1>Future is here,</h1>
+              <h1>Start Exploring now.</h1>
+            </div>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Delectus eius distinctio odit, magni magnam qui ex perferendis
+              vitae!
+            </p>
+            <div class="cta">
+              <a href="#" class="btn">Get started</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="assets/img/person.png" alt="Person Image" class="person" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-area">
+        <div class="container">
+          <button class="toggle-btn">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ./big-wrapper light-->
+
+    <!--// Login Section 
+    <div class="login-section">
+      <div class="login-card">
+        <div class="container">
+          <div class="col6">
+            <img src="assets/img/login_banner.png" alt="">
+          </div>
+          <div class="col6">
+            <form action="">
+              <h2>Sign into your account</h2>
+              <input type="email" name="email" placeholder="Email" title="Enter your email id" required>
+              <input type="password" name="password" placeholder="Password" title="Enter Password" required>
+              <input type="submit" name="login" value="Login">
+              <a class="forgot-pass" href="#" onclick="openForgot()">Forgot your password?</a>
+              <br>
+              <span>Don't you have account, Please <a href="#" onclick="openRegister()">Sign Up</a></span>
+            </form>
+          </div>
+        </div>
+        <p class="close" onclick="closeLogin()">+</p>
+      </div>
+    </div> 
+    // ./login-section -->
+
+    <!--// Register Section 
+    <div class="register-section">
+      <div class="register-card">
+        <h2>Create your account</h2>
+        <form action="" class="register-form">
+          <div class="row">
+            <div class="col6">
+              <input type="text" name="full name" placeholder="Full Name" title="Enter your full name" required>
+              <input type="text" name="mobile" placeholder="Mobile" pattern="[0-9]{10}"
+                title="Enter your 10 digit mobile number" maxlength="10" required>
+              <input type="password" name="password" placeholder="Password" title="Enter Password" required>
+              <br>
+            </div>
+            <div class="col6">
+              <input type="email" name="email" placeholder="Email" title="Enter your email id" required>
+              <input type="text" name="organisation" placeholder="organisation / University" required>
+              <input type="password" name="cpassword" placeholder="Conform Password" title="Enter your password">
+            </div>
+          </div>
+          <select name="role" id="role">
+            <option value="dummy" selected>--Sign in as --</option>
+            <option value="teacher">Teacher</option>
+            <option value="student">Student</option>
+          </select>
+          <input type="submit" name="register" value="Register"></input>
+          <span>Already have an account, Please <a href="#" onclick="openLogin()">Sign In</a></span>
+        </form>
+        <p class="close" onclick="closeRegister()">+</p>
+      </div>
+    </div> 
+    // ./register-section -->
+
+    <!--// Forgot Password Section  
+    <div class="forgot-section">
+      <div class="forgot-card">
+        <div class="container">
+          <form action="">
+            <h2>Password Recovery</h2>
+            <span style="max-width: 400px;">We get it, stuff happens. Just enter your email address below and we'll send
+              you a link to reset your
+              password!</span>
+            <input type="email" name="email" placeholder="Email" title="Enter your email id" required>
+            <input type="submit" name="submit" value="Submit"></input>
+          </form>
+        </div>
+        <p class="close" onclick="closeForgot()">+</p>
+      </div>
+    </div> 
+    // ./forgot-section -->
+
+    <!-- Sign in role selector -->
+    <!-- <div class="role-section">
+      <div class="role-card">
+        <div class="container">
+          <div class="col6">
+            <img src="assets/img/login_banner.png" alt="">
+          </div>
+          <div class="col6">
+            <h2>Sign Up as</h2>
+            <input type="submit" value="Sign up as Teacher" onclick="openRegisterTeacher()">
+            <input type="submit" value="Sign up as Student" onclick="openRegisterStudent()">
+          </div>
+        </div>
+        <p class="close" onclick="closeRole()">+</p>
+      </div>
+    </div> -->
+    <!-- ./login-section -->
+  </main>
+
+  <!-- JavaScript Files -->
+
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
